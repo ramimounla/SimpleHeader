@@ -2,7 +2,7 @@ import {IInputs, IOutputs} from "./generated/ManifestTypes";
 
 export class SimpleHeader implements ComponentFramework.StandardControl<IInputs, IOutputs> {
 
-	private _divHeader: HTMLDivElement;
+	
 	/**
 	 * Empty constructor.
 	 */
@@ -22,28 +22,31 @@ export class SimpleHeader implements ComponentFramework.StandardControl<IInputs,
 	public init(context: ComponentFramework.Context<IInputs>, notifyOutputChanged: () => void, state: ComponentFramework.Dictionary, container:HTMLDivElement)
 	{
 		// Add control initialization code
-		this._divHeader = document.createElement("div");
-		this._divHeader.innerText = context.parameters.headerText.raw + "";
+		var divHeader: HTMLDivElement;
+		divHeader = document.createElement("div");
+		divHeader.innerText = context.parameters.headerText.raw + "";
 
-		var style: string;
-		style = "";
+		// var style: string;
+		// style = "";
 		
-		if(((context.parameters.backgroundColor.raw + "").trim().length > 0))
-			this._divHeader.style.backgroundColor =context.parameters.backgroundColor.raw + "";
+		// if(((context.parameters.backgroundColor.raw + "").trim().length > 0))
+		// 	divHeader.style.backgroundColor =context.parameters.backgroundColor.raw + "";
 
-		if(((context.parameters.padding.raw + "").trim().length > 0))
-			this._divHeader.style.padding =context.parameters.padding.raw + "";
+		// if(((context.parameters.padding.raw + "").trim().length > 0))
+		// 	divHeader.style.padding =context.parameters.padding.raw + "";
 			
-		if(((context.parameters.fontColor.raw + "").trim().length > 0))
-			this._divHeader.style.color =context.parameters.fontColor.raw + "";
+		// if(((context.parameters.fontColor.raw + "").trim().length > 0))
+		// 	divHeader.style.color =context.parameters.fontColor.raw + "";
 			
-		if(((context.parameters.fontSize.raw + "").trim().length > 0))
-			this._divHeader.style.fontSize =context.parameters.fontSize.raw + "";
+		// if(((context.parameters.fontSize.raw + "").trim().length > 0))
+		// 	divHeader.style.fontSize =context.parameters.fontSize.raw + "";
 			
-		if(((context.parameters.font.raw + "").trim().length > 0))
-			this._divHeader.style.font =context.parameters.font.raw + "";
+		// if(((context.parameters.font.raw + "").trim().length > 0))
+		// 	divHeader.style.font =context.parameters.font.raw + "";
+		if(((context.parameters.styleText.raw + "").trim().length > 0))
+			divHeader.style.cssText = context.parameters.styleText.raw + "";
 
-		container.appendChild(this._divHeader);
+		container.appendChild(divHeader);
 	}
 
 
