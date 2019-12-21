@@ -5,11 +5,6 @@
     <property name="info" display-name-key="InputText" description-key="Text to appear in header" usage="bound" of-type="SingleLine.Text" required="true" default-value="Header" />
     <property name="styleText" display-name-key="StyleText" description-key="Style that will be added to the header." usage="bound" of-type="SingleLine.Text" required="false" default-value="Header" />
     <property name="headerText" display-name-key="Title Text" description-key="Text to appear in header" usage="input" of-type="SingleLine.Text" required="true" default-value="Header" />
-    <property name="fontColor" display-name-key="Font Color" description-key="Head front color" usage="input" of-type="SingleLine.Text" required="false" default-value="#FFF" />
-    <property name="font" display-name-key="Font" description-key="Header font type" usage="input" of-type="SingleLine.Text" required="false" default-value="'SegoeUI-Semibold', 'Segoe UI Semibold', 'Segoe UI Regular', 'Segoe UI'"/>
-    <property name="fontSize" display-name-key="Font Size" description-key="Header font size" usage="input" of-type="SingleLine.Text" required="false" default-value="1.2rem"/>
-    <property name="backgroundColor" display-name-key="Background Color" description-key="Header Background Color" usage="input" of-type="SingleLine.Text" required="false" default-value="#000"/>
-    <property name="padding" display-name-key="Padding" description-key="Header Text Padding" usage="input" of-type="SingleLine.Text" required="false" default-value="5px"/>
     <!-- 
       Property node's of-type attribute can be of-type-group attribute. 
       Example:
