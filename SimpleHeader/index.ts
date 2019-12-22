@@ -28,6 +28,7 @@ export class SimpleHeader implements ComponentFramework.StandardControl<IInputs,
 		if (((context.parameters.styleText.raw || "").trim().length > 0))
 			spanHeader.style.cssText = context.parameters.styleText.raw || "";
 
+		spanHeader.style.display = "block";
 		divHeader.appendChild(spanHeader);
 
 		if (((context.parameters.subHeaderText.raw || "").trim().length > 0)) {
@@ -36,6 +37,8 @@ export class SimpleHeader implements ComponentFramework.StandardControl<IInputs,
 
 			if (((context.parameters.subHeaderStyleText.raw || "").trim().length > 0))
 				spanSubHeader.style.cssText = context.parameters.subHeaderStyleText.raw || "";
+
+			spanSubHeader.style.display = "block";
 			divHeader.appendChild(spanSubHeader);
 		}
 

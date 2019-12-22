@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
-  <control namespace="XrmEnterprise" constructor="SimpleHeader" version="0.0.1" display-name-key="SimpleHeader" description-key="SimpleHeader description" control-type="standard">
+  <control namespace="XrmEnterprise" constructor="SimpleHeader" version="0.0.3" display-name-key="SimpleHeader" description-key="SimpleHeader description" control-type="standard">
     <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
     <property name="info" display-name-key="InputText" description-key="Text to appear in header" usage="bound" of-type="SingleLine.Text" required="true" default-value="Header" />
     <property name="headerText" display-name-key="Header Text" description-key="Text to appear in header" usage="input" of-type="SingleLine.Text" required="true" default-value="Header" />
