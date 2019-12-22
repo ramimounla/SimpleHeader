@@ -22,13 +22,13 @@ export class SimpleHeader implements ComponentFramework.StandardControl<IInputs,
 		// Add control initialization code
 		let divHeader: HTMLDivElement = document.createElement("div");
 		let spanHeader: HTMLSpanElement = document.createElement("span");
-
+		
+		spanHeader.className = "stackable";
 		spanHeader.innerText = context.parameters.headerText.raw || "";
 
 		if (((context.parameters.styleText.raw || "").trim().length > 0))
 			spanHeader.style.cssText = context.parameters.styleText.raw || "";
 
-		spanHeader.style.display = "block";
 		divHeader.appendChild(spanHeader);
 
 		if (((context.parameters.subHeaderText.raw || "").trim().length > 0)) {
@@ -38,7 +38,7 @@ export class SimpleHeader implements ComponentFramework.StandardControl<IInputs,
 			if (((context.parameters.subHeaderStyleText.raw || "").trim().length > 0))
 				spanSubHeader.style.cssText = context.parameters.subHeaderStyleText.raw || "";
 
-			spanSubHeader.style.display = "block";
+			spanSubHeader.className = "stackable";
 			divHeader.appendChild(spanSubHeader);
 		}
 
