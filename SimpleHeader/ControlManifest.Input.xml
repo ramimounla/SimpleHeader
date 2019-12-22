@@ -3,10 +3,10 @@
   <control namespace="XrmEnterprise" constructor="SimpleHeader" version="0.0.1" display-name-key="SimpleHeader" description-key="SimpleHeader description" control-type="standard">
     <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
     <property name="info" display-name-key="InputText" description-key="Text to appear in header" usage="bound" of-type="SingleLine.Text" required="true" default-value="Header" />
-    <property name="styleText" display-name-key="StyleText" description-key="Style that will be added to the header." usage="bound" of-type="SingleLine.Text" required="false" default-value="Header" />
-    <property name="headerText" display-name-key="Title Text" description-key="Text to appear in header" usage="input" of-type="SingleLine.Text" required="true" default-value="Header" />
-    <property name="subHeaderStyleText" display-name-key="Sub Header Style Text" description-key="Style that will be added to the sub header." usage="bound" of-type="SingleLine.Text" required="false" default-value="Header" />
-    <property name="subHeaderText" display-name-key="Sub Header Text" description-key="Text to appear under the header, usually used for description or guidance text" usage="input" of-type="SingleLine.Text" required="false" default-value="Header" />
+    <property name="headerText" display-name-key="Header Text" description-key="Text to appear in header" usage="input" of-type="SingleLine.Text" required="true" default-value="Header" />
+    <property name="styleText" display-name-key="StyleText" description-key="Style that will be added to the header." usage="input" of-type="SingleLine.Text" required="false" default-value="color: white;padding:5px;font-size: 1.4em;background-color:black;" />
+    <property name="subHeaderText" display-name-key="Sub Header Text" description-key="Text to appear under the header, usually used for description or guidance text" usage="input" of-type="SingleLine.Text" required="false" default-value="" />
+    <property name="subHeaderStyleText" display-name-key="Sub Header Style Text" description-key="Style that will be added to the sub header." usage="input" of-type="SingleLine.Text" required="false" default-value="" />
     <!-- 
       Property node's of-type attribute can be of-type-group attribute. 
       Example:
